@@ -179,9 +179,6 @@ func crearEstudiante() {
 	binary.Write(&bufferNuevo, binary.BigEndian, &estudianteNuevo)
 	escribirBytes(file, bufferNuevo.Bytes())
 
-	//Actualizamos el contador de estudiantes
-	contadorEstudiantes++
-
 	fmt.Println("Estudiante creado exitosamente!")
 }
 
