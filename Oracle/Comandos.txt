@@ -1,0 +1,21 @@
+#instalacion
+sudo su
+apt-get update
+apt install docker.io
+docker pull dockerhelp/docker-oracle-ee-18c
+docker run -it -p 1521:1521 dockerhelp/docker-oracle-ee-18c
+sh post_install.sh
+    >sqlplus
+        #user: sys as sysdba
+        #pass: oracle
+    >alter session set "_ORACLE_SCRIPT"=true;
+    >create user <User> identified by <Password>;
+    >grant dba to <User>;
+
+#correrlo
+sudo su
+docker exec -it <container-id> /bin/bash
+sh post_install.sh
+
+#instalacion sql oracle developer
+https://www.oracle.com/tools/downloads/sqldev-v192-downloads.html

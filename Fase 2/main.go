@@ -133,7 +133,7 @@ func crearArchivo() {
 func eliminarArchivo() {
 	fmt.Println("-----Eliminar archivo binario-----")
 
-	err := os.Remove("estudiantes.bin")
+	err := os.Remove("misEstructuras.bin")
 
 	if err != nil {
 		fmt.Println("Error al eliminar el archivo.")
@@ -143,7 +143,7 @@ func eliminarArchivo() {
 }
 
 func crearEstructura() {
-	fmt.Println("-----Crear estudiante-----")
+	fmt.Println("-----Crear Estructura-----")
 
 	//Toma los datos de entrada del usuario
 	reader := bufio.NewReader(os.Stdin)
