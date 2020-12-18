@@ -9,12 +9,12 @@ sh post_install.sh
         #user: sys as sysdba
         #pass: oracle
     >alter session set "_ORACLE_SCRIPT"=true;
-    >create user <User> identified by <Password>;
-    >grant dba to <User>;
+    >create user ruthlechuga identified by 201602975;
+    >grant dba to ruthlechuga;
 
 #correrlo
 sudo su
-docker exec -it <container-id> /bin/bash
+docker exec -it 5f77b12 /bin/bash
 sh post_install.sh
 
 #instalacion sql oracle developer

@@ -1,0 +1,29 @@
+-Editores de Texto (Solo uno es necesario pero se recomiendan los siguientes)
+    -Visual Studio Code
+    -Sublime Text
+    -Webstorm
+    -Atom
+
+-Base de datos
+    -Oracle
+    -DBMS: Sql developer
+
+-Backend: NodeJs
+
+-Frontend Web: 
+    -Angular
+    -React
+
+-Frontend Movil:
+    -Ionic
+    -React native
+
+-Nube:
+    -Google Cloud Platform (GCP)
+
+Herramientas extra:
+    -Postman
+    -SOAP ui 
+    -Datagrip
+    -Insonmia
+    -Paw
