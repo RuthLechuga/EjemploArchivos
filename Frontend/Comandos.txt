@@ -1,0 +1,17 @@
+#Crear la aplicación
+ng new <Nombre Aplicacion>
+
+#Correr la aplicación
+ng serve
+
+#Crear Componente
+ng g c <Path del Componente>/<Nombre del Componente>
+
+#Crear Service
+ng g s <Path del Componente>/<Nombre del Servicio>
+
+#Para más comandos de generar
+https://angular.io/cli/generate
+
+#Agregar angular material
+ng add @angular/material

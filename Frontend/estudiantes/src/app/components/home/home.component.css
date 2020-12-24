@@ -1,0 +1,2085 @@
+*{
+    padding: 0;
+    margin: 0;
+  }
+  
+  .wrapper{
+    width: 100%;
+    height: 90%;
+  }
+  
+  .cover-top {
+    width:100vw;
+    height:100vh;
+    position:relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .mountains-layer-1{
+    position: absolute;
+    bottom: 0;
+    z-index: 5;
+    width: 100vw;
+    height: 75vh;
+    clip-path: polygon(0% 100%, 13% 86%, 36% 85%, 51% 91%, 67% 88%, 78% 78%, 91% 88%, 100% 100%);
+    background-color: #111030;
+  }
+  
+  .mountains-layer-2{
+    position: absolute;
+    bottom: 0;
+    z-index: 4;
+    width: 100vw;
+    height: 75vh;
+    clip-path: polygon(0 100%, 0 88%, 6% 78%, 15% 75%, 24% 80%, 31% 80%, 37% 71%, 47% 70%, 55% 76%, 61% 82%, 66% 86%, 74% 75%, 83% 69%, 91% 80%, 100% 89%, 100% 100%);
+    background-color: #1c2f5b;
+  }
+  
+  .mountains-layer-3{
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+    width: 100vw;
+    height: 75vh;
+    clip-path: polygon(0 100%, 0 74%, 5% 64%, 13% 68%, 19% 57%, 28% 62%, 34% 53%, 44% 48%, 52% 56%, 61% 51%, 68% 59%, 76% 54%, 84% 64%, 92% 54%, 100% 68%, 100% 100%);
+    background-color: #1c4e5b;
+  }
+  
+  .mountains-layer-4{
+    position: absolute;
+    bottom: 0;
+    z-index: 15;
+    width: 100vw;
+    height: 35vh;
+    clip-path: polygon(0% 100%, 2% 93%, 4% 90%, 7% 94%, 8% 97%, 9% 99%, 12% 95%, 12% 91%, 15% 88%, 19% 89%, 21% 97%, 25% 96%, 27% 91%, 32% 88%, 35% 91%, 38% 95%, 42% 96%, 43% 89%, 47% 88%, 50% 90%, 55% 95%, 57% 96%, 60% 90%, 64% 86%, 67% 92%, 71% 83%, 73% 75%, 76% 76%, 81% 81%, 84% 89%, 88% 91%, 90% 88%, 91% 86%, 97% 92%, 100% 100%);
+    background-color: #e2e2e2;
+  }
+  
+  .northern-light{
+    position: absolute;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    animation: northern-light 20s linear alternate infinite;
+    background: -moz-linear-gradient(90deg, rgba(50,152,138,1) 0%, rgba(50,152,138,1) 40%, rgba(0,14,60,1) 70%, rgba(2,2,13,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(2,2,13,1)), color-stop(30%, rgba(0,14,60,1)), color-stop(60%, rgba(50,152,138,1)), color-stop(100%, rgba(50,152,138,1)));
+    background: -webkit-linear-gradient(90deg, rgba(50,152,138,1) 0%, rgba(50,152,138,1) 40%, rgba(0,14,60,1) 70%, rgba(2,2,13,1) 100%);
+    background: -o-linear-gradient(90deg, rgba(50,152,138,1) 0%, rgba(50,152,138,1) 40%, rgba(0,14,60,1) 70%, rgba(2,2,13,1) 100%);
+    background: -ms-linear-gradient(90deg, rgba(50,152,138,1) 0%, rgba(50,152,138,1) 40%, rgba(0,14,60,1) 70%, rgba(2,2,13,1) 100%);
+    background: linear-gradient(0deg, rgba(50,152,138,1) 0%, rgba(50,152,138,1) 40%, rgba(0,14,60,1) 70%, rgba(2,2,13,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02020D', endColorstr='#32988a',GradientType=0 );
+    z-index: 1;
+  }
+  
+  .polar-star {
+    width: 2px;
+    height: 2px;
+    background: #ecff00;
+    box-shadow: 0 0 3px #f5ff75;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    z-index: 3;
+  }
+  
+  .polar-star-1 {
+    width: 2px;
+    height: 2px;
+    left: 59%;
+    top: 31%;
+    -webkit-animation: fire-star 0.5s alternate infinite;
+    animation: fire-star 0.5s alternate infinite;
+    -webkit-animation-delay: 0.52542s;
+    animation-delay: 0.52542s;
+  }
+  
+  .polar-star-2 {
+    width: 3px;
+    height: 3px;
+    left: 80%;
+    top: 4%;
+    -webkit-animation: fire-star 0.75s alternate infinite;
+    animation: fire-star 0.75s alternate infinite;
+    -webkit-animation-delay: 0.05s;
+    animation-delay: 0.05s;
+  }
+  
+  .polar-star-3 {
+    width: 2px;
+    height: 2px;
+    left: 32%;
+    top: 75%;
+    -webkit-animation: fire-star 0.5s alternate infinite;
+    animation: fire-star 0.5s alternate infinite;
+    -webkit-animation-delay: 2.34375s;
+    animation-delay: 2.34375s;
+  }
+  
+  .polar-star-4 {
+    width: 2px;
+    height: 2px;
+    left: 4%;
+    top: 34%;
+    -webkit-animation: fire-star 0.5s alternate infinite;
+    animation: fire-star 0.5s alternate infinite;
+    -webkit-animation-delay: 18.5s;
+    animation-delay: 1.5s;
+  }
+  
+  .polar-star-5 {
+    width: 3px;
+    height: 3px;
+    left: 8%;
+    top: 26%;
+    -webkit-animation: fire-star 0.75s alternate infinite;
+    animation: fire-star 0.75s alternate infinite;
+    -webkit-animation-delay: 3.25s;
+    animation-delay: 3.25s;
+  }
+  
+  .polar-star-6 {
+    width: 3px;
+    height: 3px;
+    left: 75%;
+    top: 10%;
+    -webkit-animation: fire-star 0.75s alternate infinite;
+    animation: fire-star 0.75s alternate infinite;
+    -webkit-animation-delay: 0.13333s;
+    animation-delay: 0.13333s;
+  }
+  
+  .polar-star-7 {
+    width: 3px;
+    height: 3px;
+    left: 17%;
+    top: 61%;
+    -webkit-animation: fire-star 0.75s alternate infinite;
+    animation: fire-star 0.75s alternate infinite;
+    -webkit-animation-delay: 3.58824s;
+    animation-delay: 3.58824s;
+  }
+  
+  .polar-star-8 {
+    width: 3px;
+    height: 3px;
+    left: 71%;
+    top: 69%;
+    -webkit-animation: fire-star 0.75s alternate infinite;
+    animation: fire-star 0.75s alternate infinite;
+    -webkit-animation-delay: 0.97183s;
+    animation-delay: 0.97183s;
+  }
+  
+  .polar-star-9 {
+    width: 2px;
+    height: 2px;
+    left: 95%;
+    top: 47%;
+    -webkit-animation: fire-star 0.5s alternate infinite;
+    animation: fire-star 0.5s alternate infinite;
+    -webkit-animation-delay: 0.49474s;
+    animation-delay: 0.49474s;
+  }
+  
+  .polar-star-10 {
+    width: 2px;
+    height: 2px;
+    left: 40%;
+    top: 95%;
+    -webkit-animation: fire-star 0.5s alternate infinite;
+    animation: fire-star 0.5s alternate infinite;
+    -webkit-animation-delay: 2.375s;
+    animation-delay: 2.375s;
+  }
+  
+  .tree-1, .tree-2 {
+    width: 20vh;
+    position: absolute;
+    z-index: 10;
+    transform-origin: bottom;
+  }
+  
+  .tree-1{
+    bottom: 7%;
+    right: 5%;
+    animation: wiggle-tree 3s 1s ease alternate infinite;
+  }
+  
+  .tree-2{
+    bottom: 7%;
+    left: 10%;
+    animation: wiggle-tree 3s ease alternate infinite;
+  }
+  
+  .tree-3{
+    position: absolute;
+    bottom: 22%;
+    right: 15%;
+    z-index: 9;
+    transform-origin: bottom;
+    animation: wiggle-tree 3s 2s ease alternate infinite;
+  }
+  
+  .tree-4{
+    position: absolute;
+    bottom: 11%;
+    right: 35%;
+    z-index: 9;
+    transform-origin: bottom;
+    animation: wiggle-tree 3s 1.5s ease alternate infinite;
+  }
+  
+  .tree-5{
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+    z-index: 9;
+    transform-origin: bottom;
+    animation: wiggle-tree 3s 1.25s ease alternate infinite;
+  }
+  
+  .tree-layer,
+  .tree-log {
+    margin: 0 auto;
+  }
+  
+  .tree-layer {
+    width: 0;
+    height: 0;
+    border-left: 6vh solid transparent;
+    border-right: 6vh solid transparent;
+    border-bottom: 8vh solid #111030;
+    border-radius: 25px;
+  }
+  
+  .tree-3 .tree-layer, .tree-4 .tree-layer, .tree-5 .tree-layer {
+    width: 0;
+    height: 0;
+    border-left: 3vh solid transparent;
+    border-right: 3vh solid transparent;
+    border-bottom: 4vh solid #1c2f5b;
+    border-radius: 15px;
+  }
+  
+  .tree-layer:nth-child(2) {
+    margin-top: -20%;
+    border-left-width: 7vh;
+    border-right-width: 7vh;
+    border-bottom-width: 10vh;
+  }
+  
+  .tree-3 .tree-layer:nth-child(2), .tree-4 .tree-layer:nth-child(2), .tree-5 .tree-layer:nth-child(2){
+    margin-top: -20%;
+    border-left-width: 3.5vh;
+    border-right-width: 3.5vh;
+    border-bottom-width: 5vh;
+  }
+  
+  .tree-layer:nth-child(3) {
+    margin-top: -25%;
+    border-left-width: 9vh;
+    border-right-width: 9vh;
+    border-bottom-width: 15vh;
+  }
+  
+  .tree-3 .tree-layer:nth-child(3), .tree-4 .tree-layer:nth-child(3), .tree-5 .tree-layer:nth-child(3) {
+    margin-top: -30%;
+    border-left-width: 4.5vh;
+    border-right-width: 4.5vh;
+    border-bottom-width: 7.5vh;
+  }
+  
+  .tree-log {
+    width: 20px;
+    height: 30px;
+    background-color: #111030;
+  }
+  
+  .tree-3 .tree-log, .tree-4 .tree-log, .tree-5 .tree-log {
+    width: 10px;
+    height: 15px;
+    background-color: #1c2f5b;
+  }
+  
+  .main-cristmas-tree{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vh;
+    margin: 0;
+    bottom: 7%;
+    right: 18%;
+    z-index: 10;
+    transform-origin: bottom;
+    animation: wiggle-tree 3s 1.25s ease alternate infinite;
+  }
+  
+  .main-cristmas-tree .tree-log{
+    background: #1f0e00;
+  }
+  
+  .cristmas-star{
+    z-index: 12;
+    width: 4vh;
+    height: 4vh;
+    background: #e7ff54;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  }
+  
+  .cristmas-tree-1{
+    width:0;
+    height: 0;
+    border-left: 4vh solid transparent;
+    border-right: 4vh solid transparent;
+    border-bottom: 4vh solid #001b00;
+    border-radius: 2vh;
+    margin-top: -1vh;
+  }
+  
+  .cristmas-tree-2{
+    width:0;
+    height: 0;
+    border-left: 6vh solid transparent;
+    border-right: 6vh solid transparent;
+    border-bottom: 6vh solid #001b00;
+    border-radius: 3vh;
+    margin-top: -2.5vh;
+  }
+  
+  .cristmas-tree-3{
+    width:0;
+    height: 0;
+    border-left: 8vh solid transparent;
+    border-right: 8vh solid transparent;
+    border-bottom: 8vh solid #001b00;
+    border-radius: 4vh;
+    margin-top: -4vh;
+  }
+  
+  .cristmas-tree-4{
+    width:0;
+    height: 0;
+    border-left: 10vh solid transparent;
+    border-right: 10vh solid transparent;
+    border-bottom: 10vh solid #001b00;
+    border-radius: 5vh;
+    margin-top: -5vh;
+  }
+  
+  .cristmas-tree-5{
+    width:0;
+    height: 0;
+    border-left: 13vh solid transparent;
+    border-right: 13vh solid transparent;
+    border-bottom: 13vh solid #001b00;
+    border-radius: 6.5vh;
+    margin-top: -6.5vh;
+  }
+  
+  .cristmas-tree-6{
+    width:0;
+    height: 0;
+    border-left: 16vh solid transparent;
+    border-right: 16vh solid transparent;
+    border-bottom: 16vh solid #001b00;
+    border-radius: 8vh;
+    margin-top: -8vh;
+  }
+  
+  .main-tree-snow-1{
+    position: absolute;
+    bottom: 12%;
+    left: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .main-tree-snow-1 .snow-1-top{
+    width: 4vh;
+    height: 3.5vh;
+    background: #e2e2e2;
+    border-radius: 50%;
+    margin-bottom: -1.5vh;
+  }
+  
+  .main-tree-snow-1 .snow-1-bottom{
+    width: 8vh;
+    height: 3.5vh;
+    background: #e2e2e2;
+    border-radius: 4vh;
+  }
+  
+  .main-tree-snow-2{
+    position: absolute;
+    bottom: 24%;
+    right: 12%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .main-tree-snow-2 .snow-2-top{
+    width: 3.5vh;
+    height: 3vh;
+    background: #e2e2e2;
+    border-radius: 50%;
+    margin-bottom: -1.5vh;
+  }
+  
+  .main-tree-snow-2 .snow-2-bottom{
+    width: 6vh;
+    height: 2.5vh;
+    background: #e2e2e2;
+    border-radius: 4vh;
+  }
+  
+  .main-tree-snow-3{
+    position: absolute;
+    bottom: 43%;
+    left: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .main-tree-snow-3 .snow-3-top{
+    width: 3vh;
+    height: 2.5vh;
+    background: #e2e2e2;
+    border-radius: 50%;
+    margin-bottom: -1.25vh;
+  }
+  
+  .main-tree-snow-3 .snow-3-bottom{
+    width: 5vh;
+    height: 2vh;
+    background: #e2e2e2;
+    border-radius: 4vh;
+  }
+  
+  .main-tree-snow-4{
+    position: absolute;
+    top: 35%;
+    right: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .main-tree-snow-4 .snow-4-top{
+    width: 3vh;
+    height: 2vh;
+    background: #e2e2e2;
+    border-radius: 50%;
+    margin-bottom: -1vh;
+  }
+  
+  .main-tree-snow-4 .snow-4-bottom{
+    width: 4vh;
+    height: 1.5vh;
+    background: #e2e2e2;
+    border-radius: 4vh;
+  }
+  
+  .main-tree-snow-5{
+    position: absolute;
+    top: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .main-tree-snow-5 .snow-5-top{
+    width: 2vh;
+    height: 1.5vh;
+    background: #e2e2e2;
+    border-radius: 50%;
+  }
+  
+  .main-tree-snow-5 .snow-5-bottom{
+    width: 3.5vh;
+    height: 1.5vh;
+    background: #e2e2e2;
+    border-radius: 4vh;
+    margin-top: -0.75vh;
+  }
+  
+  .cristmas-toy-1{
+    position: absolute;
+    top: 18%;
+    left: 42%;
+    width: 1.5vh;
+    height: 1.5vh;
+    background: #ad0101;
+    border-radius: 50%;
+  }
+  
+  .toy-1-bril{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 1vh;
+    height: 1vh;
+    background: #ca6262;
+    border-radius: 50%;
+  }
+  
+  .cristmas-toy-2{
+    position: absolute;
+    top: 23%;
+    right: 38%;
+    width: 1.5vh;
+    height: 1.5vh;
+    background: #c6db05;
+    border-radius: 50%;
+  }
+  
+  .toy-2-bril{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 1vh;
+    height: 1vh;
+    background: #ffffff;
+    border-radius: 50%;
+  }
+  
+  .cristmas-toy-3{
+    position: absolute;
+    top: 30%;
+    width: 1.75vh;
+    height: 1.75vh;
+    background: #ad0101;
+    border-radius: 50%;
+  }
+  
+  .toy-3-bril{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 1.25vh;
+    height: 1.25vh;
+    background: #ca6262;
+    border-radius: 50%;
+  }
+  
+  .cristmas-toy-4{
+    position: absolute;
+    top: 36%;
+    left: 35%;
+    width: 1.75vh;
+    height: 1.75vh;
+    background: #c6db05;
+    border-radius: 50%;
+  }
+  
+  .toy-4-bril{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 1.25vh;
+    height: 1.25vh;
+    background: #fff;
+    border-radius: 50%;
+  }
+  
+  .cristmas-toy-5{
+    position: absolute;
+    top: 45%;
+    right: 42%;
+    width: 1.75vh;
+    height: 1.75vh;
+    background: #ad0101;
+    border-radius: 50%;
+  }
+  
+  .toy-5-bril{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 1.25vh;
+    height: 1.25vh;
+    background: #ca6262;
+    border-radius: 50%;
+  }
+  
+  .cristmas-toy-6{
+    position: absolute;
+    top: 53%;
+    right: 28%;
+    width: 2vh;
+    height: 2vh;
+    background: #c6db05;
+    border-radius: 50%;
+  }
+  
+  .toy-6-bril{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 1.5vh;
+    height: 1.5vh;
+    background: #fff;
+    border-radius: 50%;
+  }
+  
+  .cristmas-toy-7{
+    position: absolute;
+    bottom: 33%;
+    left: 42%;
+    width: 2vh;
+    height: 2vh;
+    background: #ad0101;
+    border-radius: 50%;
+  }
+  
+  .toy-7-bril{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 1.5vh;
+    height: 1.5vh;
+    background: #ca6262;
+    border-radius: 50%;
+  }
+  
+  .cristmas-toy-8{
+    position: absolute;
+    bottom: 34%;
+    left: 22%;
+    width: 2.25vh;
+    height: 2.25vh;
+    background: #c6db05;
+    border-radius: 50%;
+  }
+  
+  .toy-8-bril{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 1.75vh;
+    height: 1.75vh;
+    background: #fff;
+    border-radius: 50%;
+  }
+  
+  .cristmas-toy-9{
+    position: absolute;
+    bottom: 18%;
+    right: 47%;
+    width: 2.25vh;
+    height: 2.25vh;
+    background: #ad0101;
+    border-radius: 50%;
+  }
+  
+  .toy-9-bril{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 1.75vh;
+    height: 1.75vh;
+    background: #ca6262;
+    border-radius: 50%;
+  }
+  
+  .cristmas-toy-10{
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+    width: 2.5vh;
+    height: 2.5vh;
+    background: #c6db05;
+    border-radius: 50%;
+  }
+  
+  .toy-10-bril{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 2vh;
+    height: 2vh;
+    background: #fff;
+    border-radius: 50%;
+  }
+  
+  .moon{
+    position: absolute;
+    width:50vh;
+    height: 50vh;
+    top: 8%;
+    left: 10%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .moon-light-1{
+    position: absolute;
+    width:50vh;
+    height: 50vh;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: .05;
+    animation: moon-light-1-fire 5s ease infinite alternate;
+  }
+  
+  .moon-light-2{
+    position: absolute;
+    width:45vh;
+    height: 45vh;
+    border-radius: 50%;
+    background-color: #edff7a;
+    opacity: .1;
+    animation: moon-light-2-fire 5s ease infinite alternate;
+  }
+  
+  .moon-light-3{
+    position: absolute;
+    width:40vh;
+    height: 40vh;
+    border-radius: 50%;
+    background-color: #e7ff54;
+    opacity: .5;
+    animation: moon-light-3-fire 5s ease infinite alternate;
+  }
+  
+  .moon-orb{
+    position: absolute;
+    width:35vh;
+    height: 35vh;
+    border-radius: 50%;
+    background-color: #e7ff54;
+    opacity: 1;
+  }
+  
+  .moon-crator-1, .moon-crator-2, .moon-crator-3, .moon-crator-4, .moon-crator-5, .moon-crator-6, .moon-crator-7{
+    position: absolute;
+    border-radius: 50%;
+    background-color: #d1a536;
+    opacity: .5;
+  }
+  
+  .moon-crator-1{
+    top: 20%;
+    left: 20%;
+    width: 5vh;
+    height: 5vh;
+  }
+  
+  .moon-crator-2{
+    top: 20%;
+    left: 35%;
+    width: 2vh;
+    height: 2vh;
+  }
+  
+  .moon-crator-3{
+    top: 30%;
+    left: 40%;
+    width: 2vh;
+    height: 2vh;
+  }
+  
+  .moon-crator-4{
+    top: 35%;
+    left: 20%;
+    width: 1vh;
+    height: 1vh;
+  }
+  
+  .moon-crator-5{
+    top: 40%;
+    right: 20%;
+    width: 4vh;
+    height: 4vh;
+  }
+  
+  .moon-crator-6{
+    top: 50%;
+    right: 50%;
+    width: 3vh;
+    height: 3vh;
+  }
+  
+  .moon-crator-7{
+    bottom: 20%;
+    left: 20%;
+    width: 3vh;
+    height: 3vh;
+  }
+  
+  .brick-house{
+    position: absolute;
+    left: 20%;
+    bottom: 0;
+    width: 35vw;
+    height: 57vh;
+    z-index: 14;
+  }
+  
+  .roof-snow-1{
+    position: absolute;
+    top: 22%;
+    right: 5%;
+    width: 5vw;
+    height: 2vh;
+    background: #e2e2e2;
+    border-radius: 5px;
+  }
+  
+  .roof-snow-2{
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    width: 3vw;
+    height: 2vh;
+    background: #e2e2e2;
+    border-radius: 5px;
+  }
+  
+  .roof-snow-3{
+    position: absolute;
+    top: 21%;
+    right: 16%;
+    width: 10vw;
+    height: 2vh;
+    background: #e2e2e2;
+    border-radius: 15px;
+  }
+  
+  .roof-snow-4{
+    position: absolute;
+    top: 17%;
+    right: 25%;
+    width: 12vh;
+    height: 4vh;
+    background: #e2e2e2;
+    border-radius: 15px;
+  }
+  
+  .roof-snow-5{
+    position: absolute;
+    top: 13%;
+    right: 33%;
+    width: 4vh;
+    height: 4vh;
+    background: #e2e2e2;
+    border-radius: 50%;
+    z-index: 20;
+  }
+  
+  .roof-snow-6{
+    position: absolute;
+    top: 22%;
+    right: 43%;
+    width: 2vw;
+    height: 2vh;
+    background: #e2e2e2;
+    border-radius: 5px;
+  }
+  
+  .roof-snow-7{
+    position: absolute;
+    top: 23%;
+    left: 2%;
+    width: 18vw;
+    height: 3.5vh;
+    background: #e2e2e2;
+    border-radius: 15px;
+    z-index: 20;
+  }
+  
+  .roof-snow-8{
+    position: absolute;
+    top: 20%;
+    left: 7%;
+    width: 10vw;
+    height: 3.5vh;
+    background: #e2e2e2;
+    border-radius: 15px;
+    z-index: 20;
+  }
+  
+  .roof-snow-9{
+    position: absolute;
+    top: 23%;
+    left: 5%;
+    width: 4vh;
+    height: 6vh;
+    background: #e2e2e2;
+    border-radius: 15px;
+    z-index: 12;
+  }
+  
+  .roof-snow-10{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 4vh;
+    height: 6vh;
+    background: #e2e2e2;
+    border-radius: 15px;
+    z-index: 11;
+  }
+  
+  .roof-snow-11{
+    position: absolute;
+    top: 22%;
+    left: 33%;
+    width: 4vh;
+    height: 10vh;
+    background: #e2e2e2;
+    border-radius: 15px;
+    z-index: 11;
+  }
+  
+  .chimney-top{
+    width: 20%;
+    height: 3vh;
+    background: #272828;
+    border-radius: 5px;
+    margin: 1px 0px 0px 10%; 
+  }
+  
+  .chimney-top-block{
+    width: 70%;
+    height: 100%;
+    border-radius: 5px;
+    background: #323535;
+  }
+  
+  .chimney-bottom{
+    width: 20%;
+    height: 10vh;
+    border-radius: 5px;
+    background: #323535;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 10%;
+  }
+  
+  .chimney-block-1{
+    border-radius: 5px;
+    width: 24%;
+    height: 31%;
+    background: #272828;
+  }
+  
+  .chimney-block-2{
+    border-radius: 5px;
+    width: 48%;
+    height: 31%;
+    background: #272828;
+  }
+  
+  .roof{
+    width: 100%;
+    height: 2vh;
+    background: #8faaaa;
+    border-radius: 5px;
+    margin: 1px 0px 1px 0px;
+  }
+  
+  .house-box{
+    position: relative;
+    width: 100%;
+    height: 41vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    background: #323535;
+  }
+  
+  .box-block-1{
+    width: 7%;
+    height: 6%;
+    background: #272828;
+    border-radius: 5px;
+  }
+  
+  .box-block-2{
+    width: 12%;
+    height: 6%;
+    background: #272828;
+    border-radius: 5px;
+  }
+  
+  .house-window-1, .house-window-2, .house-window-3{
+    position: absolute;
+    width: 10vh;
+    height: 16vh;
+    background: #382914;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border: 4px solid #302311;
+  }
+  
+  .house-window-1{
+    top: 30%;
+    left: 10%;
+  }
+  
+  .house-window-2{
+    top: 30%;
+    right: 10%;
+  }
+  
+  .window-glass{
+    width: 40%;
+    height: 44%;
+    border-radius: 5px;
+    background: #e7ff54;
+    animation: window-fire 2s ease alternate infinite;
+  }
+  
+  .neon-sign{
+    position: absolute;
+    top: 5%;
+    font-weight: bold;
+    font-size: 30px;
+    animation: neonGlow 2s infinite alternate cubic-bezier(0.455, 0.030, 0.515, 0.955);
+    color: #88adea;
+    padding: 5px 10px;
+    border: 2px solid #88adea;
+    border-radius: 5px;
+  }
+  
+  .santa-claus{
+    position: absolute;
+    top: 32%;
+    left: 45%;
+    height: auto;
+    z-index: 13;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .santa-claus-head{
+    position: relative;
+    width: 8vh;
+    height: 8vh;
+    margin-bottom: -13%;
+    border-radius: 50%;
+    background: #fcbb62;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .claus-eye-1, .claus-eye-3{
+    width: 2vh;
+    height: 1vh;
+    background: #272828;
+    border-radius: 3px;
+  }
+  
+  .claus-eye-2{
+    width: 1vh;
+    height: 0.2vh;
+    background: #272828;
+  }
+  
+  .claus-mouth{
+    position: absolute;
+    bottom: 10%;
+    width: 2vh;
+    height: 1vh;
+    background: #fc8b61;
+    border-radius: 3px;
+    z-index: 12;
+  }
+  
+  .santa-claus-beard{
+    margin-bottom: -35%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    z-index: 11;
+  }
+  
+  .claus-beard-1{
+    width: 5vh;
+    height: 2vh;
+    background: #e8d5bb;
+    border-radius: 5px;
+    margin-top: -5px;
+  }
+  
+  .claus-beard-2{
+    width: 7vh;
+    height: 2vh;
+    background: #e8d5bb;
+    border-radius: 5px;
+    margin-top: -5px;
+  }
+  
+  .claus-beard-3{
+    width: 8vh;
+    height: 2vh;
+    background: #e8d5bb;
+    border-radius: 5px;
+    margin-top: -5px;
+  }
+  
+  .claus-beard-4{
+    width: 9vh;
+    height: 2vh;
+    background: #e8d5bb;
+    border-radius: 5px;
+    margin-top: -5px;
+  }
+  
+  .santa-claus-body{
+    position: relative;
+    width: 15vh;
+    height: 15vh;
+    border-radius: 50%;
+    background: #ad0101;
+  }
+  
+  .claus-arm-1{
+    position: absolute;
+    top: 10%;
+    right: -70%;
+    display: flex;
+    flex-direction: row;
+    transform-origin: left;
+    transform: rotate(-45deg);
+    animation: shake-right-hand 2s ease alternate infinite;
+  }
+  
+  .claus-arm-2{
+    position: absolute;
+    top: 55%;
+    left: -30%;
+    display: flex;
+    flex-direction: row-reverse;
+    transform: rotate(-90deg)
+  }
+  
+  .arm-top{
+    width: 8vh;
+    height: 3vh;
+    background: #ad0101;
+    border-radius: 10px;
+  }
+  
+  .arm-bottom-1{
+    width: 1vh;
+    height: 3vh;
+    background: #e8d5bb;
+    border-radius: 10px;
+    margin-left: -5%;
+  }
+  
+  .arm-bottom-2{
+    width: 5vh;
+    height: 3vh;
+    background: #e8d5bb;
+    border-radius: 10px;
+    margin-left: -5%;
+  }
+  
+  .claus-body-bottom{
+    margin-top: -35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 11;
+  }
+  
+  .body-bottom-1{
+    width: 9vh;
+    height: 3vh;
+    background: #e8d5bb;
+    border-radius: 10px;
+  }
+  
+  .body-bottom-2{
+    width: 5vh;
+    height: 3vh;
+    background: #e8d5bb;
+    border-radius: 10px;
+    margin-left: -5px;
+  }
+  
+  .legs-top{
+    margin-top: -28%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .legs-top-1{
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    background: #ad0101;
+  }
+  
+  .legs-top-1:last-child{
+    margin-left: -10px;
+  }
+  
+  .legs-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .legs-bottom-1{
+    width: 3vh;
+    height: 4vh;
+    background: #ad0101;
+    overflow: hidden;
+  }
+  
+  .legs-bottom-1:last-child{
+    margin-left: 10px;
+  }
+  
+  
+  .happy-message{
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    width: 20vh;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 13;
+  }
+  
+  .happy-message-1{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid #88adea;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    animation: buble-message 10s 2.5s ease infinite alternate;
+    transform: scale(0);
+    color: #88adea;
+  }
+  
+  .happy-message-2{
+    position: absolute;
+    bottom: 25%;
+    right: 15%;
+    width: 8vh;
+    height: 4vh;
+    border-radius: 10px;
+    border: 2px solid #88adea;
+    animation: buble-message 10s 2.25s ease infinite alternate;
+    transform: scale(0);
+  }
+  
+  .happy-message-3{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 4vh;
+    height: 2vh;
+    border-radius: 10px;
+    border: 2px solid #88adea;
+    animation: buble-message 10s 2s ease infinite normal;
+    transform: scale(0);
+  }
+  
+  .cristmas-deer-1{
+    position: fixed;
+    top: 35%;
+    right: -20%;
+    width: 8vh;
+    height: 5vh;
+    border-radius: 50%;
+    background: #111030;
+    z-index: 12;
+    animation: deer-1-move 10s linear infinite;
+  }
+  
+  .cristmas-deer-2{
+    position: fixed;
+    top: 35%;
+    right: -25.5%;
+    width: 8vh;
+    height: 5vh;
+    border-radius: 50%;
+    background: #111030;
+    z-index: 12;
+    animation: deer-1-move 10s linear infinite;
+  }
+  
+  .deer-horns{
+    position: absolute;
+    top: -200%;
+    left: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .deer-horns-1{
+    width: 0.5vh;
+    height: 5vh; 
+    border-radius: 3vh;
+    background: #111030;
+    transform: rotate(15deg);
+  }
+  
+  .deer-horns-2{
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    width: 3vh;
+    height: 0.5vh; 
+    border-radius: 3vh;
+    background: #111030;
+    transform: rotate(10deg);
+  }
+  
+  .deer-horns-3{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    width: 1.5vh;
+    height: 0.5vh; 
+    border-radius: 3vh;
+    background: #111030;
+  }
+  
+  .deer-head{
+    position: absolute;
+    top: -90%;
+    left: -10%;
+    width: 5vh;
+    height: 3vh;
+    border-radius: 50%;
+    background: #111030;
+    transform: rotate(-65deg);
+  }
+  
+  .deer-nose{
+    position: absolute;
+    top: 5%;
+    left: -10%;
+    width: 1.5vh;
+    height: 1.5vh;
+    background: #111030;
+    border-radius: 50%;
+  }
+  
+  .deer-ear{
+    position: absolute;
+    top: 50%;
+    right: -40%;
+    width: 3vh;
+    height: 1vh;
+    background: #111030;
+    border-radius: 50%;
+    transform: rotate(25deg);
+  }
+  
+  .deer-neck{
+    position: absolute;
+    top: -80%;
+    left: 25%;
+    width: .75vh;
+    height: 5vh;
+    background: #111030;
+    border-radius: 1vh;
+    transform: rotate(20deg);
+  }
+  
+  .deer-tail{
+    position: absolute;
+    top: 15%;
+    right: -10%;
+    width: 3vh;
+    height: 1.5vh;
+    background: #111030;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+  }
+  
+  .deer-leg-1{
+    width: 5vh;
+    height: 5vh;
+    position: absolute;
+    bottom: -70%;
+    left: -40%;
+    transform: rotate(-15deg);
+    transform-origin: top right;
+    animation: legs-move 0.5s linear alternate infinite;
+  }
+  
+  .deer-leg-2{
+    width: 5vh;
+    height: 5vh;
+    position: absolute;
+    bottom: -70%;
+    left: -30%;
+    transform: rotate(-15deg);
+    transform-origin: top right;
+    animation: legs-move 0.5s .5s linear alternate infinite;
+  }
+  
+  .deer-leg-3{
+    width: 5vh;
+    height: 5vh;
+    position: absolute;
+    bottom: -90%;
+    right: -30%;
+    transform-origin: top left;
+    animation: legs-move 0.5s linear alternate infinite;
+  }
+  
+  .deer-leg-3 .leg-top{
+    position: absolute;
+    top: -10%;
+    left: 18%;
+    width: 0.5vh;
+    height: 2.5vh;
+    background: #111030;
+    border-radius: 1vh;
+  }
+  
+  .deer-leg-3 .leg-bottom{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    width: 0.5vh;
+    height: 2.5vh;
+    background: #111030;
+    border-radius: 1vh;
+  }
+  
+  .deer-leg-4{
+    width: 5vh;
+    height: 5vh;
+    position: absolute;
+    bottom: -90%;
+    right: -20%;
+    transform-origin: top left;
+    animation: legs-move 0.5s .5s linear alternate infinite;
+  }
+  
+  .deer-leg-4 .leg-top{
+    position: absolute;
+    top: -10%;
+    left: 18%;
+    width: 0.5vh;
+    height: 2.5vh;
+    background: #111030;
+    border-radius: 1vh;
+  }
+  
+  .deer-leg-4 .leg-bottom{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    width: 0.5vh;
+    height: 2.5vh;
+    background: #111030;
+    border-radius: 1vh;
+  }
+  
+  .leg-top{
+    position: absolute;
+    top: 20%;
+    right: -15%;
+    width: 3vh;
+    height: 0.5vh;
+    background: #111030;
+    border-radius: 1vh;
+    transform: rotate(-60deg);
+  }
+  .leg-bottom{
+    position: absolute;
+    bottom: 1%;
+    right: 22%;
+    width: 0.5vh;
+    height: 2.5vh;
+    background: #111030;
+    border-radius: 1vh;
+  }
+  
+  .cristmas-wagon{
+    position: fixed;
+    top: 36%;
+    right: -35%;
+    width: 15vh;
+    height: 5vh;
+    border-radius: 50%;
+    background: #111030;
+    z-index: 12;
+    animation: deer-1-move 10s linear infinite;
+  }
+  
+  .wagon-top-1{
+    position: absolute;
+    top: -1%;
+    width: 15vh;
+    height: 2.5vh;
+    background: #111030;
+  }
+  
+  .wagon-top-2{
+    position: absolute;
+    top: -30%;
+    left: -5%;
+    width: 3vh;
+    height: 3vh;
+    border-radius: 50%;
+    background: #111030;
+  }
+  .wagon-top-3{
+    position: absolute;
+    top: -60%;
+    right: -5%;
+    width: 7vh;
+    height: 4vh;
+    border-radius: 1vh;
+    background: #111030;
+  }
+  
+  .wagon-top-4{
+    position: absolute;
+    top: -60%;
+    right: 24%;
+    width: 4vh;
+    height: 4vh;
+    border-radius: 50%;
+    background: #111030;
+  }
+  
+  .wagon-top-5{
+    position: absolute;
+    top: -85%;
+    right: -10%;
+    width: 2vh;
+    height: 2vh;
+    border-radius: 50%;
+    background: #111030;
+  }
+  
+  .wagon-bottom-1{
+    position: absolute;
+    bottom: -45%;
+    right: 25%;
+    width: 0.5vh;
+    height: 4vh;
+    border-radius: 2vh;
+    background: #111030;
+    transform: rotate(-45deg);
+  }
+  
+  .wagon-bottom-2{
+    position: absolute;
+    bottom: -45%;
+    left: 25%;
+    width: 0.5vh;
+    height: 4vh;
+    border-radius: 2vh;
+    background: #111030;
+    transform: rotate(45deg);
+  }
+  
+  .wagon-bottom-3{
+    position: absolute;
+    bottom: -40%;
+    width: 15vh;
+    height: 0.5vh;
+    border-radius: 2vh;
+    background: #111030;
+  }
+  
+  .wagon-bottom-4{
+    position: absolute;
+    bottom: -40%;
+    left: -5%;
+    width: 1.5vh;
+    height: 1.5vh;
+    border-radius: 50%;
+    background: #111030;
+  }
+  
+  .tooltip.top_tooltip{
+    top: -80px;
+  }
+  
+  .cristmas-pres-box-1{
+    position: absolute;
+    bottom: 1%;
+    left: 35%;
+    margin-right: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 10vh;
+    height: 6vh;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 700;
+    z-index: 14;
+    background: #3f1fce;
+  }
+  
+  .cristmas-pres-box-2{
+    position: absolute;
+    bottom: 0%;
+    left: 18%;
+    margin-right: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 15vh;
+    height: 8vh;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 700;
+    z-index: 14;
+    background: #ad0101;
+    z-index: 14;
+  }
+  
+  .cristmas-pres-box-3{
+    position: absolute;
+    bottom: 0%;
+    left: 52%;
+    margin-right: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 12vh;
+    height: 7vh;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 700;
+    z-index: 14;
+    background: #ad0101;
+    z-index: 14;
+  }
+  
+  .cristmas-pres-box-top-1{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 1px solid #080025;
+    width: 11vh;
+    height: 2vh;
+    border-radius: 2vh;
+    background: #3f1fce;
+  }
+  
+  .cristmas-pres-box-top-1::before{
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2vh;
+    height: 2vh;
+    background: #080025;
+  }
+  
+  
+  .cristmas-pres-box-top-2{
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 16vh;
+    height: 3vh;
+    border-radius: 3vh;
+    background: #ad0101;
+    border-bottom: 1px solid #700000;
+  }
+  
+  .cristmas-pres-box-top-2::before{
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2.5vh;
+    height: 3vh;
+    background: #c6db05;
+  }
+  
+  .cristmas-pres-box-top-3{
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 13vh;
+    height: 2vh;
+    border-radius: 3vh;
+    background: #ad0101;
+    border-bottom: 1px solid #700000;
+  }
+  
+  .cristmas-pres-box-top-3::before{
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2.5vh;
+    height: 2vh;
+    background: #c6db05;
+  }
+  
+  
+  .cristmas-pres-box-1::before{
+    content: '';
+    height: 6vh;
+    width: 2vh;
+    background: #080025;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .cristmas-pres-box-2::before{
+    content: '';
+    height: 8vh;
+    width: 2vh;
+    background: #c6db05;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .cristmas-pres-box-3::before{
+    content: '';
+    height: 7vh;
+    width: 2vh;
+    background: #c6db05;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  
+  .cristmas-pres-box-1::after{
+    content: '';
+    height: 1vh;
+    width: 10vh;
+    background: #080025;
+    position: absolute;
+    top: 60%;
+    left: 0%;
+    transform: translateY(-50%);
+  }
+  
+  .cristmas-pres-box-2::after{
+    content: '';
+    height: 1vh;
+    width: 15vh;
+    background: #c6db05;
+    position: absolute;
+    top: 60%;
+    left: 0%;
+    transform: translateY(-50%);
+  }
+  
+  .cristmas-pres-box-3::after{
+    content: '';
+    height: 1vh;
+    width: 12vh;
+    background: #c6db05;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+  }
+  
+  .tooltip{
+    position: absolute;
+    width: 100px;
+    height: 45px;
+    background: #fff;
+    color: #111030;
+    top: 0;
+    left: -100%;
+    font-weight: 700;
+    font-size: 10px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+  
+  .cristmas-pres-box-1:hover, .cristmas-pres-box-2:hover, .cristmas-pres-box-3:hover{
+    animation: shake-present 1s ease;
+  }
+  
+  .cristmas-pres-box-1:hover .tooltip{
+    opacity: 1;
+  }
+  
+  .cristmas-pres-box-2:hover .tooltip{
+    opacity: 1;
+  }
+  
+  .cristmas-pres-box-3:hover .tooltip{
+    opacity: 1;
+  }
+  
+  .top_tooltip:before{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    right: 0px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid #fff;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+  }
+  
+  .auxiliary-window{
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    z-index: 20;
+    padding: 10px;
+    color: #080025;
+    text-transform: uppercase;
+    border: 2px solid #080025;
+    border-radius: 2vh;
+    animation: buble-message-1 5s 2s ease alternate;
+    transform: scale(0);
+    animation-iteration-count: 1;
+  }
+  
+  .auxiliary-window p{
+    text-align: center;
+  }
+  
+  @keyframes shake-present {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+  
+  @keyframes deer-1-move{
+    0% {
+      transform: translateX(0vw);
+    }
+    100% {
+      transform: translateX(-135vw);
+    }
+  }
+  
+  @keyframes legs-move{
+    0% {
+      transform: rotate(25deg);
+    }
+    100% {
+      transform: rotate(-5deg);
+    }
+  }
+  
+  @keyframes buble-message{
+    0%{
+      transform: scale(0);
+    }
+      2.5%{
+      transform: scale(1.1);
+    }
+      5%{
+      transform: scale(1);
+    }
+      96%{
+      transform: scale(1);
+    }
+      98%{
+      transform: scale(1.1);
+    }
+      100%{
+      transform: scale(0);
+    }
+  }
+  
+  
+  @keyframes buble-message-1{
+    0%{
+      transform: scale(0);
+    }
+      10%{
+      transform: scale(1.1);
+    }
+      13%{
+      transform: scale(1);
+    }
+      97%{
+      transform: scale(1);
+    }
+      90%{
+      transform: scale(1.1);
+    }
+      100%{
+      transform: scale(0);
+    }
+  }
+  
+  @keyframes neonGlow {
+    0% {
+      text-shadow: 0 0 40px  rgba(66,220,219,.8),
+                   0 0 60px  rgba(66,220,219,.8),
+                   0 0 80px  rgba(66,220,219,.5),
+                   0 0 100px rgba(66,220,219,.5),
+                   0 0 140px rgba(66,220,219,.5),
+                   0 0 200px rgba(66,220,219,.5);
+      box-shadow: none;
+    }
+    100% {
+      text-shadow: 0 0 20px rgba(66,220,219,.8),
+                   0 0 30px rgba(66,220,219,.8),
+                   0 0 40px rgba(66,220,219,.8),
+                   0 0 50px rgba(66,220,219,.5),
+                   0 0 80px rgba(66,220,219,.5);
+      box-shadow: 0px 0px 14px #12c2c4;
+    }
+  }
+  
+  @keyframes shake-right-hand{
+    0% {
+      transform: rotate(-45deg)
+    }
+    50%{
+      transform: rotate(-50deg)
+    }
+    100% {
+      transform: rotate(-40deg)
+    }
+  }
+  
+  @keyframes window-fire{
+    0% {
+      opacity: .5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes northern-light {
+    0% {
+      transform: translate(5%, -2%);
+    }
+    25% {
+      transform: translate(10%, 7%);
+    }
+    40% {
+      transform: rotate(-10deg);
+    }
+    60% {
+      transform: translate(7%, -2%);
+    }
+    85% {
+      transform: translate(6%, 3%) rotate(12deg);
+    }
+    100% {
+      transform: translate(5%, -2%);
+    }
+  }
+  
+  @-webkit-keyframes fire-star {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fire-star {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes wiggle-tree{
+    0% {
+      transform: rotate(0deg);
+    }
+    50%{
+      transform: rotate(2deg);
+    }
+    100% {
+      transform: rotate(-2deg);
+    }
+  }
+  
+  @keyframes moon-light-1-fire {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: .05;
+    }
+  }
+  
+  @keyframes moon-light-2-fire {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: .1;
+    }
+  }
+  
+  @keyframes moon-light-3-fire {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: .5;
+    }
+  }

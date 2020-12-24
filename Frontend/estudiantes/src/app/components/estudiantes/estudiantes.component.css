@@ -1,0 +1,48 @@
+mat-grid-list {
+    margin-left: 25px !important;
+    margin-right: 25px !important;
+}
+
+img {
+    width: 80%;
+    padding-left: 10%;
+}
+
+mat-grid-tile-header {
+    background-color: #7B1FA2 !important;
+}
+
+button {
+    margin-right: 10px !important;
+}
+
+.form {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 2%;
+}
+
+.action-buttons {
+    padding-bottom: 20px;
+}
+
+.mat-expansion-panel-header-title,
+.mat-expansion-panel-header-description {
+    flex-basis: 0;
+}
+
+.mat-expansion-panel-header-description {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mat-form-field + .mat-form-field {
+    margin-left: 8px;
+}
+
+.full-width {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 0.5%;
+    width: 94%;
+}

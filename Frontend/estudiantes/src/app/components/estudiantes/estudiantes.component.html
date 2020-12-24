@@ -1,0 +1,72 @@
+<app-navbar></app-navbar>
+
+<br><br>
+
+<div class="form">
+
+    <h1>Estudiante</h1>
+
+    <div class="action-buttons">
+        <button mat-raised-button color="primary" (click)="accordion.openAll()">Expandir Todo</button>
+        <button mat-raised-button color="primary" style="margin-left: 1%;" (click)="accordion.closeAll()">Colapsar Todo</button>
+    </div> 
+
+    <br>
+
+    <mat-accordion class="example-headers-align" multi>
+
+        <mat-expansion-panel expanded>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Crear Estudiante
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+
+            <mat-form-field class="full-width">
+                <mat-label>Carnet</mat-label>
+                <input matInput [(ngModel)]="carnet">
+            </mat-form-field>
+
+            <mat-form-field class="full-width">
+                <mat-label>Nombre</mat-label>
+                <input matInput [(ngModel)]="nombre">
+            </mat-form-field>
+
+            <button mat-raised-button color="warn" (click)="add()">Agregar</button>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Ver Estudiantes
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+
+            <mat-grid-list cols="4">
+                <mat-grid-tile colspan="1" *ngFor="let estudiante of estudiantes; let i = index;">
+                    
+                    <mat-grid-tile-header>
+                        <button mat-mini-fab color="accent" (click)="update(estudiante.carnet)">
+                            <mat-icon>update</mat-icon>
+                        </button>
+                        <button mat-mini-fab color="warn" (click)="delete(estudiante.carnet)">
+                            <mat-icon>delete</mat-icon>
+                        </button>
+                        <p>{{estudiante.nombre}} : {{estudiante.carnet}}</p>
+                        
+                    </mat-grid-tile-header>
+            
+                    <img *ngIf="i % 5 == 0" src="../../../assets/student.svg">
+                    <img *ngIf="i % 5 == 1" src="../../../assets/student2.svg">
+                    <img *ngIf="i % 5 == 2" src="../../../assets/student3.svg">
+                    <img *ngIf="i % 5 == 3" src="../../../assets/student4.svg">
+                    <img *ngIf="i % 5 == 4" src="../../../assets/student5.svg"> 
+            
+                </mat-grid-tile>
+                
+            </mat-grid-list>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>
+
+<br><br>
