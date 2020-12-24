@@ -15,3 +15,6 @@ https://angular.io/cli/generate
 
 #Agregar angular material
 ng add @angular/material
+
+#Correr Aplicacion angular para permitir acceso desde cualquier IP
+ng serve --host 0.0.0.0
