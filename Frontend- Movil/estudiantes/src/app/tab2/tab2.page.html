@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Agregar Estudiante
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <br>
+
+  <ion-item>
+    <ion-label>Carnet</ion-label>
+    <ion-input [(ngModel)]="carnet"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label>Nombre</ion-label>
+    <ion-input [(ngModel)]="nombre"></ion-input>
+  </ion-item>
+
+  <br>
+
+  <ion-button expand="full" (click)="add()">Agregar</ion-button>
+  
+</ion-content>

@@ -1,0 +1,55 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Ver Estudiantes
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid fixed>
+    <ion-row>
+        <ion-searchbar animated color="transparent"
+          (ionChange)="buscar($event)">
+        </ion-searchbar>
+    </ion-row>
+  </ion-grid>
+  
+  <ion-list>
+    <ion-item *ngFor="let estudiante of estudiantes|  filtro:textoBuscar:'nombre'; let i = index;">
+
+      <ion-label>
+        <ion-card>
+          
+          <img *ngIf="i%5 == 0" src="./../../assets/student.svg" />
+          <img *ngIf="i%5 == 1" src="./../../assets/student2.svg" />
+          <img *ngIf="i%5 == 2" src="./../../assets/student3.svg" />
+          <img *ngIf="i%5 == 3" src="./../../assets/student4.svg" />
+          <img *ngIf="i%5 == 4" src="./../../assets/student5.svg" />
+          
+          <ion-card-header>
+            <ion-card-subtitle>{{estudiante.carnet}}</ion-card-subtitle>
+            <ion-card-title>{{estudiante.nombre}}</ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content>
+            <ion-button color="primary" (click)=view(estudiante)>
+              <ion-icon slot="icon-only" name="eye-outline"></ion-icon>
+            </ion-button>
+
+            <ion-button color="success" (click)=update(estudiante.carnet)>
+              <ion-icon slot="icon-only" name="build-outline"></ion-icon>
+            </ion-button>
+
+            <ion-button color="danger" (click)=delete(estudiante.carnet)>
+              <ion-icon slot="icon-only" name="trash-outline"></ion-icon>
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+
+      </ion-label>
+
+    </ion-item>
+
+  </ion-list >
+</ion-content>
