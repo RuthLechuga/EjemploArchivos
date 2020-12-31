@@ -1,0 +1,17 @@
+#empezar una aplicacion con tabs
+ionic start <Nombre> tabs
+
+#correr proyecto
+ionic serve
+
+#correr proyecto de forma pro
+ionic serve -l
+
+#instalar native-run
+npm i -g native-run
+
+#correr aplicacion con cordova
+ionic cordova run browser
+
+#tutorial para google maps
+https://dev.to/ecudevs/integrando-ionic-framework-4-con-google-maps-49n7
